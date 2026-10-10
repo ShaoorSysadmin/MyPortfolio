@@ -1,0 +1,42 @@
+# Dependencies and generated files
+
+node_modules
+dist
+coverage
+.npm
+
+# Git metadata
+
+.git
+.github
+
+# Environment files and secrets
+
+.env
+.env.*
+!.env.example
+
+# Logs and debug output
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local editor and operating system files
+
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Terraform state and local infrastructure files
+
+**/.terraform
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Private keys and certificates
+
+*.pem
+*.key
