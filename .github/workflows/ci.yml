@@ -87,7 +87,9 @@ jobs:
           exit-code: "1"
           format: table
 
+
       - name: Verify production output
         run: |
-          test -s dist/index.html
-          test -d dist/assets
+          test -s dist/index.html || { echo "dist/index.html missing or empty"; ls -la dist || true; exit 1; }
+          test -d dist/assets || { echo "dist/assets directory missing"; ls -la dist; exit 1; }    
+           
