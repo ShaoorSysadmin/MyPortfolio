@@ -30,6 +30,8 @@ COPY --from=builder /app/dist/ /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Explicitly run the container as a non-root user
+USER root
+RUN apk upgrade --no-cache tiff
 USER 101
 
 EXPOSE 8080
