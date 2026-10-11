@@ -20,9 +20,9 @@
     "@types/react": "18.3.20",
     "@types/react-dom": "18.3.6",
     "@vitejs/plugin-react": "4.4.1",
-    "sharp": "0.34.1",
+    "sharp": "^0.35.5",
     "tailwindcss": "4.1.4",
     "typescript": "5.8.3",
-    "vite": "6.3.5"
+    "vite": "^6.4.4"
   }
 }
